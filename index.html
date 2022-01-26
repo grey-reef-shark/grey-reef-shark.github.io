@@ -84,15 +84,12 @@ img {
 	<h1>STEP TO PEACE アイスブレイク用乱数ジェネレーター</h1>
 	<p>0から100までの数字をランダムに生成するツールだよ〜ん byひろき</p>
 
-<button type="button" onclick="ShowResult()">数字を生成する
-</button>
-<script>
-function ShowResult() {
-alert( random );
-}
-{
-var random = Math.floor( Math.random() * 101 );
+<form><input type="button" value="数字を生成" onClick="omikuji()"></form>
 
+<script type="text/javascript">
+function omikuji() {
+	rand = Math.floor(Math.random()*101);
+	alert(rand);
 }
 </script>
 
